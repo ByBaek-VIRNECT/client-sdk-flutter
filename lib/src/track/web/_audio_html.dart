@@ -90,6 +90,6 @@ void setSinkId(String id, String deviceId) {
   final audioElement = web.document.getElementById(audioPrefix + id);
   if (audioElement is web.HTMLAudioElement &&
       jsutil.hasProperty(audioElement, 'setSinkId')) {
-    audioElement.setSinkId(deviceId);
+    // audioElement.setSinkId(deviceId);
   }
 }
